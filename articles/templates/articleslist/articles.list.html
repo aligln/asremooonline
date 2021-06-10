@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>مقالات آموزشی</title>
+    <link rel="stylesheet" href="/static/styles.css">
+  </head>
+  <body>
+    <h1>hello shokohi</h1>
+    {% for article in articles %}
+    <h2><a href="#">{{article.title}}</a></h2>
+    <p>{{article.body}}</p>
+      <p>{{article.date}}</p>
+    {% endfor %}
+  </body>
+</html>
